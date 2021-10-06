@@ -1,10 +1,11 @@
 import {Bars, Nav, NavIcon, NavLink} from './NavElement';
-const NavBar = () => {
+const NavBar = (props) => {
+    console.log(props);
     return ( 
         <div className="navbar">
             <Nav>
-                <NavLink to="/">Pizza</NavLink>
-                <NavIcon>
+                <NavLink to="/">PizzaLover</NavLink>
+                <NavIcon onClick={props.toggle}>
                     <p>Menu</p>
                     <Bars></Bars>
                 </NavIcon>
